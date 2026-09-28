@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KK Making | Paper Cups</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5faf9;color:#18232b}
+.hero{padding:55px 18px;text-align:center;color:#fff;background:linear-gradient(135deg,#075e54,#0e7490)}
+.hero h1{font-size:44px;margin:0 0 8px}.hero p{font-size:18px}.btn{display:inline-block;padding:13px 20px;margin:7px;border-radius:28px;background:#fff;color:#075e54;text-decoration:none;font-weight:700}
+section{max-width:1050px;margin:auto;padding:42px 18px}h2{text-align:center;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card,.form{background:#fff;border-radius:20px;padding:20px;box-shadow:0 5px 22px #0001}.cup{height:170px;border-radius:15px;background:linear-gradient(160deg,#e5f7f5,#fff);display:flex;align-items:center;justify-content:center;font-size:70px}
+.card h3{color:#075e54}.form{max-width:720px;margin:auto}label{font-weight:bold;font-size:14px}input,select,textarea{width:100%;padding:13px;margin:6px 0 13px;border:1px solid #ccd5d8;border-radius:10px;font-size:15px}.order{width:100%;border:0;border-radius:12px;padding:15px;background:#075e54;color:#fff;font-size:17px;font-weight:bold}.contact{background:#0f172a;color:#fff;border-radius:20px;padding:28px;text-align:center}.contact a{color:#fff}footer{text-align:center;background:#020617;color:#ddd;padding:20px}.note{text-align:center;color:#64727a;font-size:13px}
+</style>
+</head>
+<body>
+<div class="hero"><h1>KK Making</h1><p>Quality Paper Cups for Tea & Water</p><p>चाय और पानी के लिए गुणवत्तापूर्ण पेपर कप</p>
+<a class="btn" href="tel:9721128895">📞 Call</a><a class="btn" href="https://wa.me/919721128895">💬 WhatsApp</a></div>
+
+<section><h2>हमारे Products</h2><div class="grid">
+<div class="card"><div class="cup">☕</div><h3>Tea Paper Cups</h3><p>चाय और गर्म पेय के लिए।</p></div>
+<div class="card"><div class="cup">💧</div><h3>Water Paper Cups</h3><p>पानी और पेय पदार्थों के लिए।</p></div>
+<div class="card"><div class="cup">🏷️</div><h3>Printed Paper Cups</h3><p>ब्रांड और बिज़नेस के लिए।</p></div>
+<div class="card"><div class="cup">📦</div><h3>Custom Paper Cups</h3><p>आपकी जरूरत के अनुसार।</p></div>
+</div></section>
+
+<section><h2>🛒 Online Order</h2><div class="form">
+<p class="note">पूरे India से order भेजें। Form भरने के बाद जानकारी WhatsApp पर भेजी जाएगी।</p>
+<form onsubmit="sendOrder(event)">
+<label>नाम *</label><input id="n" required>
+<label>मोबाइल नंबर *</label><input id="p" type="tel" required>
+<label>ईमेल</label><input id="e" type="email">
+<label>देश *</label><select id="co"><option>India</option></select>
+<label>राज्य *</label><input id="st" required>
+<label>शहर *</label><input id="ci" required>
+<label>पूरा Delivery Address *</label><textarea id="ad" rows="3" required></textarea>
+<label>Product *</label><select id="pr"><option>Tea Paper Cups</option><option>Water Paper Cups</option><option>Printed Paper Cups</option><option>Custom Paper Cups</option></select>
+<label>Quantity *</label><input id="q" type="number" min="1" required>
+<button class="order">WhatsApp पर Order भेजें</button>
+</form></div></section>
+
+<section><h2>📞 Contact</h2><div class="contact">
+<p>📍 Keshav Puram Colony, Jamaur, Shahjahanpur, Uttar Pradesh<br>RJ Mill के पास / SH-29 के आसपास</p>
+<p>📞 <a href="tel:9721128895">9721128895</a> | <a href="tel:8737021121">8737021121</a><br>✉️ <a href="mailto:kkindustry505@gmail.com">kkindustry505@gmail.com</a></p>
+</div></section>
+<footer>© 2026 KK Making. All Rights Reserved.</footer>
+<script>
+function sendOrder(x){x.preventDefault();let m=`KK Making Online Order\n\nनाम: ${n.value}\nमोबाइल: ${p.value}\nईमेल: ${e.value}\nदेश: ${co.value}\nराज्य: ${st.value}\nशहर: ${ci.value}\nपता: ${ad.value}\nProduct: ${pr.value}\nQuantity: ${q.value}`;location.href='https://wa.me/919721128895?text='+encodeURIComponent(m)}
+</script>
+</body></html>
